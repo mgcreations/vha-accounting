@@ -230,19 +230,31 @@ nav a:hover {
     grid-template-rows: auto;
     grid-gap: 10px;
     justify-items: center;
-    align-items: center;
     padding-top: 20px;
+}
+
+.footer-grid h3 {
+    color: #fff;
+}
+
+.footer-grid p {
+    color: #fff;
+}
+
+.footer-grid a {
+    color: #fff;
 }
 
 .footer-box {
     display: block;
 	width: 400px;
     padding: 20px;
-    border: aliceblue 1px solid;
+    padding-top: 10px;
 }
 
-.footer-box p {
-    color: #fff;
+.social {
+    font-size: 40px;
+    padding-right: 10px;
 }
 
 .footer-logo {
