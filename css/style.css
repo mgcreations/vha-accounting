@@ -13,9 +13,17 @@ html {
 }
 
 body {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        width: 100%;
+    }
+
 }
 
 h1 {
@@ -88,10 +96,12 @@ h6 {
     "footer footer footer";
 }
 
+
 .header {
     grid-area: header;
     background-color: aqua;
 }
+
 
 .main {
     grid-area: main;
@@ -153,8 +163,9 @@ nav a:hover {
 
 .burger-menu {
     grid-column: 1;
-    align-items: center;
+    align-self: center;
     margin-left: 20px;
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -188,8 +199,13 @@ nav a:hover {
 .logo {
     grid-column: 2;
     font-size: 40px;
-    padding: 1rem;
 }
+
+.logo img {
+    max-width: 100%;
+    height: auto !important;
+}
+
 
 .right-menu {
     grid-column: 3;
@@ -197,5 +213,12 @@ nav a:hover {
     justify-self: end;
     margin-right: 15px;
     font-size: 30px;
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .right-menu {
+        display: none;
+    }
 }
 
