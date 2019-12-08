@@ -91,7 +91,7 @@ h6 {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto minmax(650px, 65vh) 1fr;
+    grid-template-rows: auto minmax(650px) 1fr;
     grid-template-areas: 
     "header header header"
     "main main main"
@@ -223,6 +223,48 @@ nav a:hover {
         display: none;
     }
 }
+
+.cover {
+    box-sizing: border-box;
+    width: 100%;
+    height: 65vh;
+    background-image: url("/images/accounting.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cover-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: center;
+    width: 600px;
+    height: 100px;
+    background-color: var(--blue);
+}
+
+.cover-text h2 {
+    color: #fff;
+    padding-left: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .cover-text{
+        width: 300px;
+        height: 50px;
+    }
+
+    .cover-text h2 {
+        font-size: 1em;
+    }
+}
+
 
 .footer-grid {
     display: grid;
