@@ -2,6 +2,7 @@
     --blue: #0c569f;
     --teal: #1993a0;
     --black: #272727;
+    --orange: #eb5b25;
 }
 
 
@@ -263,6 +264,40 @@ nav a:hover {
     .cover-text h2 {
         font-size: 1em;
     }
+}
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.service-box {
+    display: block;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--orange);
+    border-radius: 25px;
+    color: #fff;
+}
+
+.service-box h4 {
+    text-align: center;
+}
+
+.service-box p {
+    font-size: .75em;
+}
+
+.service-box li {
+    font-size: .75em;
+}
+
+.service-icon {
+    font-size: 60px;
+    text-align: center;
 }
 
 
