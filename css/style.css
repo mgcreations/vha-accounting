@@ -310,13 +310,23 @@ nav a:hover {
     "content-box advert";
 }
 
+@media only screen and (max-width: 1025px) {
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "content-box"
+        "advert";
+    }
+}
+
 .content-box {
     padding: 10px;
 }
 
 .content-box p{
     padding-left: 25px;
-
+    padding-right: 25px;
 }
 
 .advert {
