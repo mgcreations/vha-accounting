@@ -341,6 +341,12 @@ nav a:hover {
     }
 }
 
+@media only screen and (max-width: 360px){
+    .testimonal {
+        width: 250px;
+    }
+}
+
 .advert {
     background-color: #fff;
 }
