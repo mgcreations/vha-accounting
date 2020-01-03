@@ -1,11 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.testimonal').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 6000,
-      speed: 800,
-      slidesToShow: 1,
-      adaptiveHeight: false
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        speed: 800,
+        slidesToShow: 1,
+        adaptiveHeight: false
     });
-  });
+});
