@@ -9,7 +9,7 @@
 html {
     box-sizing: border-box; /*allows to add padding and border to elements without increasing thier size */
     /* System font stack so things load nice and quick */
-    font-family:  Roboto, sans-serif;
+    font-family:  'Roboto', sans-serif;
     font-size: 1em;
     color: var(--black);
 }
@@ -267,16 +267,15 @@ nav a:hover {
 }
 
 .service {
+    box-sizing: border-box;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 10px;
-    justify-items: center;
 }
 
 .service-box {
-    display: block;
-    width: 300px;
+    min-width: 250px;
     padding: 20px;
     background-color: var(--orange);
     border-radius: 25px;
