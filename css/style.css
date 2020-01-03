@@ -329,6 +329,18 @@ nav a:hover {
     padding-right: 25px;
 }
 
+.testimonal {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 1025px) {
+    .testimonal {
+        width: 500px;
+    }
+}
+
 .advert {
     background-color: #fff;
 }
@@ -336,6 +348,12 @@ nav a:hover {
 .advert img {
     width: 50%;
     height: auto !important;
+}
+
+@media only screen and (max-width: 1025px) {
+    .advert img {
+        width: 150px;
+    }
 }
 
 .footer-grid {
