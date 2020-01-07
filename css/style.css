@@ -1127,11 +1127,23 @@ nav a:hover {
 
 .advert {
     background-color: #fff;
+    padding: 10px;
+}
+
+.advert h4 {
+    text-align: center;
 }
 
 .advert img {
     width: 50%;
     height: auto !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 1025px) {
