@@ -1119,7 +1119,7 @@ nav a:hover {
 }
 
 .team-box {
-    min-width: 320px;
+    min-width: 280px;
     padding: 20px;
     background-color: var(--orange);
     border-radius: 25px;
