@@ -1251,8 +1251,11 @@ nav a:hover {
     width: 100%;
     text-align: left;
     border: none;
+    border-bottom: 1px solid var(--blue);
     outline: none;
     transition: 0.4s;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
