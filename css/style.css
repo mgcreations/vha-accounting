@@ -1329,6 +1329,14 @@ nav a:hover {
     grid-template-rows: auto;
 }
 
+@media only screen and (max-width: 1025px) {
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
