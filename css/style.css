@@ -1217,6 +1217,8 @@ nav a:hover {
     }
 }
 
+
+
 .content {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -1319,6 +1321,11 @@ nav a:hover {
     background-color: white;
     display: none;
     overflow: hidden;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footer-grid {
