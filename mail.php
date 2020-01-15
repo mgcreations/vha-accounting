@@ -15,6 +15,6 @@
 
     if (!$_POST['submit'] == 'Submit')
     {
-        header('Location: http://vhaaccounting.co.za/');
+        header('Location: http://www.vhaaccounting.co.za/index.html');
     }
 ?>
