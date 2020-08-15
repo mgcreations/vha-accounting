@@ -1098,6 +1098,18 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
 }
 
+.hero-articles {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    background-image: url("/images/news-articles.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
 .hero-text {
     grid-column-start: 2;
     grid-column-end: 3;
