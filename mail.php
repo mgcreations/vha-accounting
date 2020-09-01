@@ -1,15 +1,17 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
 
-$message = $_POST['message'];
+if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $subject = $_POST['subject'];
+  $mailFrom = $_POST['mail'];
+  $message = $_POST['message'];
 
-$formcontent=" From: $name \n Phone: $phone \n Message: $message";
+  $thankyou_page = "thank_you.html";
 
-$recipient = "info@vhaaccounting.com";
-$subject = "Enquiry from Website";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!" . " -" . "<a href='form.html' style='text-decoration:none;color:#ff0099;'> Return Home</a>";
-?>
+  $mailTo = "info@mgcreations.co.za"
+  $headers = "From: " . $_POST['mail'];
+  $txt = "You have received an e-mail from ".$name.".\n\n".$message;
+
+  mail($mailTo, $subject, $txt, $headers);
+  header( "Location: $thankyou_page" );
+}
