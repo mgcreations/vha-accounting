@@ -35,7 +35,7 @@
                     <div class="left-menu">
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
-                        <a href="team.html">Team</a>
+                        <!-- <a href="team.html">Team</a> -->
                         <a href="services.html">Services</a>
                         <a href="fqa.html">FQA</a>
                         <a href="articles.html">Articles</a>
@@ -52,11 +52,29 @@
         </div>
 
         <div class="main">
-            <div class="hero">
-                <div class="hero-text">
-                    <h2>Meet the Team</h2>
-                </div>
-            </div>
+
+            <div >
+                <img class="mySlides" src="./images/slideshow/firm-28.jpg" style="width:100%">
+                <img class="mySlides" src="./images/slideshow/firm-7.jpg" style="width:100%">
+                <img class="mySlides" src="./images/slideshow/Team-Photo---Boardromm-B&W.jpg" style="width:100%">
+              </div>
+
+              <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+                </script>
 
 
             <div class="content">
@@ -93,9 +111,6 @@
                         <a href="./team/Alpha-Dladla.html">Alpha Dladla</a>
                     </h5>
 
-                    <h5>
-                        <a href="./team/Irshaad-Cassimjee.html">Irshaad Cassimjee</a>
-                    </h5>
 
                     <h5>
                         <a href="./team/Brian-Osborn.html">Brian Osborn</a>
@@ -106,10 +121,20 @@
                     </h5>
 
                     <h5>
-                        <a href="./team/Hayley-Pienaar.html">Hayley Pienaar</a>
+                        <a href="./team/Sashalee-Govender.html">Sasha-Lee Govender</a>
                     </h5>
 
-                    
+                    <h5>
+                        <a href="./team/Sarisha-Maharaj.html">Sarisha Maharaj</a>
+                    </h5>
+
+                    <h5>
+                        <a href="./team/Learnmore-Dzinomwa.html">Learnmore Dzinomwa</a>
+                    </h5>
+
+                    <h5>
+                        <a href="./team/Nikitha-Bennie.html">Nikitha Bennie</a>
+                    </h5>
 
                 </div>
 
