@@ -248,10 +248,11 @@ nav a:hover {
     grid-column-end: 3;
     justify-self: end;
     align-self: center;
-    width: 600px;
-    height: 100px;
+    width: 650px;
+    height: 150px;
     background-color: var(--blue);
 }
+
 
 .cover-text h2 {
     color: #fff;
@@ -260,16 +261,45 @@ nav a:hover {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 1025px) {
-
-    .cover-text{
-        width: 300px;
-        height: 50px;
+@media only screen and (max-width: 600px) {
+    .cover-text {
+        width: 350px;
+        height: 75px;
     }
 
     .cover-text h2 {
         font-size: 1em;
     }
+}
+
+@media only screen and (max-width: 900px) {
+    .cover-text{
+        width: 450px;
+        height: 90px;
+    }
+
+    .cover-text h2 {
+        font-size: 1.25em;
+    }
+}
+
+.btn-promo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.promo-button {
+    font-size: 1.25em;
+    background-color: var(--orange);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #000;
+}
+
+.btn-promo a {
+    text-decoration: none;
 }
 
 .blue {
@@ -340,6 +370,85 @@ nav a:hover {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
 }
+
+.promo {
+    box-sizing: border-box;
+    width: 100%;
+    height: 75vh;
+    background-image: url("/images/xero_works_anywhere.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.promo-text {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: center;
+    width: 650px;
+    height: 150px;
+    background-color: var(--blue);
+}
+
+.promo-text h2 {
+    color: #fff;
+    padding-left: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 900px) {
+    .promo-text {
+        width: 450px;
+        height: 85px;
+    }
+
+    .promo-text h2 {
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .promo-text {
+        width: 350px;
+        height: 75px;
+    }
+
+    .promo-text h2 {
+        font-size: 1em;
+    }
+}
+
+.promo-form {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+.promo-form label {
+    display: flex;
+  align-items: center
+}
+
+.g-recaptcha {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promo-button-form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 20px;
+}
+
 
 .hero-text {
     grid-column-start: 2;
@@ -436,6 +545,8 @@ nav a:hover {
     grid-gap: 10px;
 }
 
+
+
 .service-box {
     min-width: 250px;
     padding: 20px;
@@ -457,8 +568,11 @@ nav a:hover {
 }
 
 .service-icon {
+    display: block;
     font-size: 60px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .team {
@@ -675,6 +789,23 @@ nav a:hover {
 .services {
     padding: 20px;
 }
+
+.promotion {
+    padding: 20px;
+}
+
+.promotion h2 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--blue);
+}
+
+.promotion p {
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: bold;
+}
+
 
 .news {
     box-sizing: border-box;
@@ -896,3 +1027,4 @@ input[type=submit]:hover, input[type=reset]:hover {
     color: #fff;
     font-size: 10px;
 }
+
