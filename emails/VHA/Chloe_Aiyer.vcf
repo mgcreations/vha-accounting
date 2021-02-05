@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Chloe Aiyer
+N;CHARSET=UTF-8:Aiyer;Chloe;;;
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:chloe@vhaaccounting.com
+TEL;TYPE=CELL:066 307 2834
+TEL;TYPE=WORK,VOICE:087 109 0712
+LABEL;CHARSET=UTF-8;TYPE=WORK:43
+ADR;CHARSET=UTF-8;TYPE=WORK:;;Montgomery Drive;Pietermaritzburg;KwaZulu Natal;3201;South Africa
+TITLE;CHARSET=UTF-8:PA / Office Coordinator
+ORG;CHARSET=UTF-8:VHA Accounting Solutions
+URL;type=WORK;CHARSET=UTF-8:https://vhaaccounting.co.za/
+REV:2021-02-05T03:19:48.589Z
+END:VCARD
